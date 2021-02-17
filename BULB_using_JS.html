@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+    <TITLE>BULB</TITLE>
+<STYLE>
+    BUTTON
+    {
+        border-style: hidden;
+        padding: 20PX;
+        background-color: white;
+        cursor: pointer;
+    }
+</STYLE>
+</HEAD>
+    <BODY>
+        <SCRIPT>
+            function glowBlub(n)
+            {
+                var pic;
+                if(n==1)
+                    {
+                        pic=""
+                    }
+                else if(n==2)
+                    {
+                       pic="C:\Users\SSD\Desktop\WEBSITE\Images\BULB\Blue_Bulb.jpg"
+                    }
+                else if(n==3)
+                    {
+                        pic=""
+                    }
+                else
+                    {
+                        pic=""
+                    }
+                document.getElementById('myImage').src = pic;
+            }
+        </SCRIPT>
+        
+<img id="myImage" src=https://images.pexels.com/photos/1616472/pexels-photo-1616472.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 />
+        
+    <BUTTON type="button" onclick="glowBlub(1)">OFF</BUTTON>
+         <BUTTON type="button" onclick="glowBlub(2)">GREEN</BUTTON>
+         <BUTTON type="button" onclick="glowBlub(3)">YELLOW</BUTTON>
+         <BUTTON type="button" onclick="glowBlub(4)">BLUE</BUTTON>
+        
+         
+    </BODY>
+</HTML>
