@@ -2,12 +2,53 @@
 <HEAD>
     <TITLE>BULB</TITLE>
 <STYLE>
+    body
+    {
+        background-color: #5CDB95;
+    }
+    
     BUTTON
     {
         border-style: hidden;
         padding: 20PX;
         background-color: white;
         cursor: pointer;
+        position: relative;
+        left: 25%;
+        top:100px;;
+    }
+    
+    img
+    {
+        width: 200px;
+        height: 300px;
+        position: relative;
+        left:600px;
+        top:50px;
+    }
+
+    .off:hover
+    {
+        background-color: BLACK;
+        color: white;
+    }
+    
+    .red:hover
+    {
+        background-color: red;
+        color: white;
+    }
+    
+    .blue:hover
+    {
+        background-color: blue;
+        color: white;
+    }
+    
+    .yellow:hover
+    {
+        background-color: yellow;
+        color: white;
     }
 </STYLE>
 </HEAD>
@@ -18,31 +59,39 @@
                 var pic;
                 if(n==1)
                     {
-                        pic=""
+                        pic="Images/BULB/White_BulbImage.jpg"
                     }
                 else if(n==2)
                     {
-                       pic="C:\Users\SSD\Desktop\WEBSITE\Images\BULB\Blue_Bulb.jpg"
+                       pic="Images/BULB/RED_BulbImage.jpg"
                     }
                 else if(n==3)
                     {
-                        pic=""
+                        pic="Images/BULB/BlueBulbImage.jpg"
                     }
                 else
                     {
-                        pic=""
+                        pic="Images/BULB/YELLOW_BulbImage.jpg"
                     }
                 document.getElementById('myImage').src = pic;
             }
         </SCRIPT>
         
-<img id="myImage" src=https://images.pexels.com/photos/1616472/pexels-photo-1616472.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 />
+        <h2 style="text-align: center">BULB LIGHTS USING JAVASCRIPT</h2>
         
-    <BUTTON type="button" onclick="glowBlub(1)">OFF</BUTTON>
-         <BUTTON type="button" onclick="glowBlub(2)">GREEN</BUTTON>
-         <BUTTON type="button" onclick="glowBlub(3)">YELLOW</BUTTON>
-         <BUTTON type="button" onclick="glowBlub(4)">BLUE</BUTTON>
+<img id="myImage" src="Images/BULB/White_BulbImage.jpg" />
         
+    <BUTTON type="button" onclick="glowBlub(1)" class="off">OFF</BUTTON>
+         <BUTTON type="button" onclick="glowBlub(2)" class="red">RED</BUTTON>
+         <BUTTON type="button" onclick="glowBlub(3)" class="blue">BLUE</BUTTON>
+         <BUTTON type="button" onclick="glowBlub(4)" class="yellow">YELLOW</BUTTON>
+        
+        <BR/>
+          <FOOTER STYLE="text-align: center;position: absolute;bottom: 0%;left: 45%">
+    <H3>MILIT GANDHI</H3>
+    <H3>180020107016</H3>
+              <H3>CE(SEM 6<SUP>th</SUP>)</H3>
+        </FOOTER>
          
     </BODY>
 </HTML>
